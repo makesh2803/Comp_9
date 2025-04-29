@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font-bold {
+            font-weight: bold;
+        }
+        .font-size {
+            font-size: x-large;
+        }
+        .font-color-red {
+            color: #FF2F28;
+        }
+        .font-italic {
+            font-style: italic;
+        }
+        .padding-top {
+            padding-top: 10px;
+        }
+        .padding-bottom {
+            padding-bottom: 10px;
+        }
+        .padding-top-large {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="font-bold font-size">
+            Zoo Keeper Application form
+        </div>
+        <div class="font-italic padding-top padding-bottom">
+            Please complete the form. Mandatory fields are marked with a <span class="font-color-red">*</span>
+        </div>
+        <fieldset>
+            <legend class="font-bold">
+                Contact Details
+            </legend>
+            <div class="padding-bottom">
+                <label for="name">Name <span class="font-color-red">*</span></label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="phone">Telephone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="padding-top">
+                <label for="mail">Email <span class="font-color-red">*</span></label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="font-bold">
+                Personal information
+            </legend>
+            <div>
+                <label for="age"><span class="font-color-red">*</span>Age</label>
+                <input type="number" name="age" id="age" value="1" min="0" max="130" required>
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female" selected>Female</option>
+                </select>
+            </div>
+            <div>
+                <label for="zoo">When did you first know you wanted to be a zoo-keeper?</label>
+                <textarea name="" id="" rows="5" cols="30"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="font-bold">
+                Pick your favourite animals
+            </legend>
+            <div>
+                <input type="checkbox" name="zebra" id="">Zebra
+                <input type="checkbox" name="cat" id="">Cat
+                <input type="checkbox" name="Anaconda" id="" >Anaconda
+                <input type="checkbox" name="Human" id="" >Human
+            </div>
+            <div>
+                <input type="checkbox" name="elephant" id="">Elephant
+                <input type="checkbox" name="wildebeest" id="">Wildebeest
+                <input type="checkbox" name="Pigeon" id="" >Pigeon
+                <input type="checkbox" name="Crab" id="" >Crab
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Submit Application</button>
+        </div>
+    </form>
+</body>
+</html>
